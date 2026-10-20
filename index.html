@@ -1,37 +1,399 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>FAMA TECH | Suporte Industrial</title>
-<meta name="description" content="Soluções completas em suporte industrial no Polo Industrial de Manaus. Inspeção, retrabalho, reparos, montagens e terceirização de mão de obra.">
-<style>
-:root{--navy:#06152f;--blue:#123f85;--cyan:#48b9ff;--ink:#f2f5ff;--muted:#c0cce0;--light:#0b1b39;--white:#fff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,sans-serif;color:var(--ink);line-height:1.6;background:#06132b}a{color:inherit;text-decoration:none}.wrap{width:min(1160px,90%);margin:auto}
-header{position:sticky;top:0;z-index:10;background:#07152f;border-bottom:1px solid #23375b}.nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}.logo{font-size:1.45rem;font-weight:900;letter-spacing:-1px;color:#fff}.logo span{color:var(--cyan)}nav{display:flex;gap:27px;align-items:center;font-size:.92rem;font-weight:650}nav a:hover{color:#48b9ff}.btn{display:inline-flex;align-items:center;justify-content:center;background:#d90020;color:#fff;padding:13px 21px;border-radius:5px;font-weight:800;border:0;cursor:pointer;transition:.2s}.btn:hover{background:#ff263f;transform:translateY(-1px)}.btn.outline{background:transparent;border:1px solid #fff;color:#fff}.hero{position:relative;min-height:590px;display:flex;align-items:center;color:white;background:linear-gradient(90deg,rgba(3,13,36,.96) 0%,rgba(5,26,66,.83) 48%,rgba(107,0,24,.26) 100%),url('https://images.unsplash.com/photo-1581092160562-40aa08e78837?auto=format&fit=crop&w=2000&q=85') center/cover}.hero:after{content:"";position:absolute;inset:auto 0 0;height:6px;background:var(--cyan)}.hero-content{position:relative;z-index:1;max-width:720px;padding:88px 0}.eyebrow{font-size:.78rem;font-weight:800;letter-spacing:2px;text-transform:uppercase;color:var(--cyan)}h1{font-size:clamp(2.5rem,5.5vw,4.6rem);line-height:1.05;letter-spacing:-2px;margin:18px 0 20px}h1 span{color:var(--cyan)}.hero p{font-size:1.15rem;max-width:610px;color:#e1ebf2;margin:0 0 30px}.hero-actions{display:flex;gap:13px;flex-wrap:wrap}.proof{background:#07152f;color:white}.proof-grid{display:grid;grid-template-columns:repeat(4,1fr);padding:25px 0;gap:20px}.proof-item{display:flex;align-items:center;gap:12px}.proof-icon{display:grid;place-items:center;width:42px;height:42px;border:1px solid #42708d;border-radius:50%;color:#48b9ff;font-size:1.2rem;flex-shrink:0}.proof-item strong{display:block;font-size:.94rem}.proof-item small{color:#b7c9d7;font-size:.8rem}.section{padding:88px 0}.section-head{max-width:700px;margin-bottom:42px}.section-head h2{font-size:clamp(2rem,4vw,3rem);line-height:1.12;letter-spacing:-1px;margin:10px 0 16px;color:var(--navy)}.section-head p{color:var(--muted);font-size:1.05rem}.about-grid{display:grid;grid-template-columns:1fr 1fr;gap:55px;align-items:center}.about-visual{min-height:380px;border-radius:10px;background:linear-gradient(0deg,rgba(7,39,65,.35),rgba(7,39,65,.05)),url('https://images.unsplash.com/photo-1567789884554-0b844b597180?auto=format&fit=crop&w=1000&q=85') center/cover;position:relative;overflow:hidden}.experience{position:absolute;bottom:22px;left:22px;background:#0d2042;border-left:5px solid var(--cyan);padding:18px 23px;border-radius:4px}.experience strong{display:block;font-size:2rem;line-height:1.1;color:var(--navy)}.experience span{font-size:.85rem;color:var(--muted)}.about-copy h2{font-size:2.4rem;line-height:1.12;color:var(--navy);margin:10px 0 20px}.about-copy p{color:var(--muted)}.checklist{padding:0;list-style:none;margin:25px 0}.checklist li{margin:12px 0}.checklist li:before{content:"✓";color:#48b9ff;font-weight:900;margin-right:10px}.essence{background:linear-gradient(135deg,#07152f,#102c59)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#0d2042;padding:28px;border-radius:8px;border:1px solid #263e68;box-shadow:0 8px 24px rgba(0,0,0,.18)}.card .symbol{font-size:1.5rem;color:#48b9ff;background:#132f5d;width:52px;height:52px;display:grid;place-items:center;border-radius:8px}.card h3{color:#fff;margin:18px 0 8px;font-size:1.25rem}.card p{color:var(--muted);margin:0}.values{display:flex;gap:10px;flex-wrap:wrap;margin-top:22px}.pill{padding:9px 13px;border:1px solid #c9e3eb;border-radius:30px;color:var(--navy);font-size:.85rem;font-weight:700;background:#0d2042}.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:17px}.service{border-radius:8px;overflow:hidden;border:1px solid #263e68;background:#0d2042;transition:.2s}.service:hover{transform:translateY(-5px);box-shadow:0 12px 30px #0b365015;border-color:#9edbe7}.service img{width:100%;height:150px;object-fit:cover;display:block}.service-body{padding:18px}.service h3{font-size:1rem;line-height:1.35;color:#fff;margin:0 0 14px}.service a{font-weight:800;font-size:.85rem;color:#48b9ff}.service a span{font-size:1.2rem;margin-left:4px}.contact{background:var(--navy);color:#fff}.contact-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:start}.contact h2{font-size:clamp(2rem,4vw,3rem);line-height:1.1;margin:10px 0 18px}.contact p{color:#c7d6e0}.contact-list{display:grid;gap:16px;margin-top:28px}.contact-line{display:flex;gap:13px;align-items:flex-start}.contact-line .symbol{color:#48b9ff;font-size:1.25rem}.contact-line strong{display:block}.contact-line span,.contact-line a{color:#c7d6e0;font-size:.94rem}.form-card{background:#0d2042;color:var(--ink);padding:30px;border-radius:10px;border:1px solid #263e68}.form-card h3{margin:0 0 5px;color:#fff;font-size:1.5rem}.form-card>p{color:#c0cce0;margin:0 0 22px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:15px}.field{display:flex;flex-direction:column;gap:6px}.field.full{grid-column:1/-1}.field label{font-size:.84rem;font-weight:750}.field input,.field select,.field textarea{width:100%;font:inherit;padding:12px 13px;border:1px solid #344b72;border-radius:5px;background:#07152f;color:#fff;outline:none}.field input:focus,.field select:focus,.field textarea:focus{border-color:#48b9ff;box-shadow:0 0 0 3px #48b9ff25}.field textarea{resize:vertical;min-height:95px}.form-card .btn{width:100%;margin-top:17px}.privacy{font-size:.76rem;color:#b2bfd5;text-align:center;margin-top:12px}footer{background:#030b1b;color:#b7c8d5;padding:25px 0;font-size:.85rem}.footer-inner{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-logo{color:#fff;font-weight:900;font-size:1.1rem}
-@media(max-width:900px){nav{gap:14px}.proof-grid{grid-template-columns:repeat(2,1fr)}.about-grid,.contact-grid{grid-template-columns:1fr;gap:32px}.services-grid{grid-template-columns:repeat(2,1fr)}.cards{grid-template-columns:1fr}.about-visual{min-height:300px}}
-@media(max-width:620px){.nav{height:auto;min-height:70px;flex-wrap:wrap;padding:15px 0}.nav nav{order:3;width:100%;overflow:auto;padding:8px 0;gap:20px}.nav nav a{white-space:nowrap;font-size:.84rem}.nav>.btn{padding:10px 13px;font-size:.85rem}.hero{min-height:570px}.hero-content{padding:65px 0}h1{letter-spacing:-1px}.proof-grid{grid-template-columns:1fr 1fr;gap:18px 12px}.proof-item{align-items:flex-start}.proof-item strong{font-size:.82rem}.proof-item small{font-size:.73rem}.section{padding:62px 0}.services-grid{grid-template-columns:1fr}.service img{height:190px}.form-grid{grid-template-columns:1fr}.field.full{grid-column:auto}.form-card{padding:22px}.footer-inner{flex-direction:column}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>FAMA TECH | Suporte Industrial</title>
+<link rel="stylesheet" href="style.css">
+  <meta name="description" content="Soluções completas em suporte industrial no Polo Industrial de Manaus. Inspeção, retrabalho, reparos, montagens e terceirização de mão de obra.">
+
 </head>
+
 <body>
-<header><div class="wrap nav"><a class="logo" href="#inicio">FAMA<span>TECH</span></a><nav><a href="#sobre">Sobre nós</a><a href="#essencia">Nossa essência</a><a href="#servicos">Serviços</a><a href="#contato">Contato</a></nav><a class="btn" href="#contato">Solicitar atendimento</a></div></header>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#inicio">FAMA<span>TECH</span></a>
+
+    <nav>
+      <a href="#sobre">Sobre nós</a>
+      <a href="#essencia">Nossa essência</a>
+      <a href="#servicos">Serviços</a>
+      <a href="#contato">Contato</a>
+    </nav>
+
+    <a class="btn" href="#contato">Solicitar atendimento</a>
+  </div>
+</header>
+
 <main>
-<section class="hero" id="inicio"><div class="wrap"><div class="hero-content"><div class="eyebrow">Suporte industrial • Manaus/AM</div><h1>Eficiência que move <span>a sua produção.</span></h1><p>A FAMA TECH é especializada em suporte industrial, com soluções completas para elevar a qualidade, a agilidade e a eficiência da sua operação.</p><div class="hero-actions"><a class="btn" href="#servicos">Conheça nossos serviços ↗</a><a class="btn outline" href="#contato">Fale com nossa equipe</a></div></div></div></section>
-<section class="proof"><div class="wrap proof-grid"><div class="proof-item"><div class="proof-icon">◷</div><div><strong>10 anos de experiência</strong><small>Conhecimento de mercado</small></div></div><div class="proof-item"><div class="proof-icon">◇</div><div><strong>Soluções personalizadas</strong><small>Para a sua operação</small></div></div><div class="proof-item"><div class="proof-icon">◎</div><div><strong>Equipe especializada</strong><small>Compromisso com qualidade</small></div></div><div class="proof-item"><div class="proof-icon">↗</div><div><strong>Foco em resultados</strong><small>Mais eficiência produtiva</small></div></div></div></section>
-<section class="section" id="sobre"><div class="wrap about-grid"><div class="about-visual"><div class="experience"><strong>10 anos</strong><span>de experiência no Polo Industrial de Manaus</span></div></div><div class="about-copy"><div class="eyebrow">Sobre a FAMA TECH</div><h2>Experiência e excelência para a indústria.</h2><p>Somos referência em suporte industrial, atuando há 10 anos no Polo Industrial de Manaus. Oferecemos soluções completas para apoiar a qualidade e a continuidade dos processos produtivos.</p><p>Nossa atuação reúne inspeção, retrabalho, reparos, terceirização de mão de obra, montagens e submontagens, sempre com atenção aos padrões e às necessidades de cada cliente.</p><ul class="checklist"><li>Serviços alinhados às necessidades da sua operação</li><li>Compromisso com qualidade e agilidade</li><li>Atendimento focado em relações de confiança</li></ul><a class="btn" href="https://www.famagrupo.com/" target="_blank" rel="noopener">Saiba mais sobre o grupo ↗</a></div></div></section>
-<section class="section essence" id="essencia"><div class="wrap"><div class="section-head"><div class="eyebrow">Nossa essência</div><h2>Princípios que orientam cada entrega.</h2><p>Trabalhamos com responsabilidade, consistência e foco em construir relações duradouras com clientes, fornecedores e colaboradores.</p></div><div class="cards"><article class="card"><div class="symbol">◎</div><h3>Missão</h3><p>Oferecer as melhores soluções na prestação de serviços, com excelência na qualidade e no padrão de atendimento, garantindo solidez nos negócios e segurança para clientes, fornecedores e colaboradores.</p></article><article class="card"><div class="symbol">↗</div><h3>Visão</h3><p>Ser reconhecida no mercado pela competência, integridade e valor agregado na entrega dos serviços contratados, além da confiabilidade das nossas ações.</p></article><article class="card"><div class="symbol">✦</div><h3>Valores</h3><p>Praticamos nossos valores em cada etapa do trabalho, com atenção às pessoas, aos processos e aos resultados.</p><div class="values"><span class="pill">Agilidade e velocidade</span><span class="pill">Ética e respeito</span><span class="pill">Flexibilidade</span><span class="pill">Iniciativa</span></div></article></div></div></section>
-<section class="section" id="servicos"><div class="wrap"><div class="section-head"><div class="eyebrow">Nossos serviços</div><h2>Soluções completas para a sua operação.</h2><p>Atuamos em diferentes frentes de suporte industrial, com serviços especializados que contribuem para mais qualidade, agilidade e eficiência no processo produtivo.</p></div><div class="services-grid">
-<article class="service"><img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=700&q=80" alt="Inspeção industrial"><div class="service-body"><h3>Inspeção de qualidade e seleção</h3><a href="https://www.famagrupo.com/servicos/detalhes/inspecao-de-qualidade-e-selecao" target="_blank" rel="noopener">Ver serviço <span>↗</span></a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80" alt="Placa eletrônica"><div class="service-body"><h3>Diagnóstico e conserto de placas eletrônicas</h3><a href="https://www.famagrupo.com/servicos/detalhes/diagnostico-e-conserto-de-placas-eletronicas" target="_blank" rel="noopener">Ver serviço <span>↗</span></a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80" alt="Controle de qualidade"><div class="service-body"><h3>Inspeção de qualidade e recebimento</h3><a href="https://www.famagrupo.com/servicos/detalhes/inspecao-de-qualidade-e-selecao" target="_blank" rel="noopener">Ver serviço <span>↗</span></a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=700&q=80" alt="Recebimento industrial"><div class="service-body"><h3>Inspeção de recebimento</h3><a href="https://www.famagrupo.com/servicos/detalhes/inspecao-de-recebimento" target="_blank" rel="noopener">Ver serviço <span>↗</span></a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=700&q=80" alt="Suporte técnico"><div class="service-body"><h3>Suporte técnico, análise e confirmação de RMA</h3><a href="https://www.famagrupo.com/servicos/detalhes/suporte-tecnico-analise-e-confirmacao-de-rma" target="_blank" rel="noopener">Ver serviço <span>↗</span></a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=700&q=80" alt="Montagem industrial"><div class="service-body"><h3>Submontagem e suporte a linhas de montagem</h3><a href="https://www.famagrupo.com/servicos/detalhes/sub-montagem-e-suporte-a-linhas-de-montagem" target="_blank" rel="noopener">Ver serviço <span>↗</span></a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="Retrabalho técnico"><div class="service-body"><h3>Retrabalho</h3><a href="https://www.famagrupo.com/servicos/detalhes/retrabalho" target="_blank" rel="noopener">Ver serviço <span>↗</span></a></div></article>
-<article class="service"><img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80" alt="Logística de materiais"><div class="service-body"><h3>Embarque, desembarque e transbordo de materiais</h3><a href="https://www.famagrupo.com/servicos/detalhes/embarque-desembarque-e-transbordo-de-materiais" target="_blank" rel="noopener">Ver serviço <span>↗</span></a></div></article>
-</div></div></section>
-<section class="section contact" id="contato"><div class="wrap contact-grid"><div><div class="eyebrow">Entre em contato</div><h2>Vamos encontrar a melhor solução para a sua empresa.</h2><p>Nossa equipe está pronta para conversar com você e entender as necessidades do seu negócio.</p><div class="contact-list"><div class="contact-line"><div class="symbol">☎</div><div><strong>Telefone</strong><a href="tel:+559230265000">(92) 3026-5000</a></div></div><div class="contact-line"><div class="symbol">◉</div><div><strong>WhatsApp</strong><a href="https://wa.me/5592985868682" target="_blank" rel="noopener">(92) 98586-8682</a></div></div><div class="contact-line"><div class="symbol">✉</div><div><strong>E-mail</strong><a href="mailto:comercial@famagrupo.com">comercial@famagrupo.com</a></div></div><div class="contact-line"><div class="symbol">⌖</div><div><strong>Endereço</strong><a href="https://maps.app.goo.gl/RDHtuqigLNF8JqyM9" target="_blank" rel="noopener">Av. Buriti, 2691 – Distrito Industrial I<br>Manaus – AM | CEP 69075-000</a></div></div></div></div>
-<div class="form-card"><h3>Fale com um especialista</h3><p>Preencha seus dados e conte um pouco sobre o que sua empresa precisa.</p><form id="leadForm"><div class="form-grid"><div class="field"><label for="nome">Nome completo *</label><input id="nome" name="nome" required placeholder="Seu nome"></div><div class="field"><label for="empresa">Empresa *</label><input id="empresa" name="empresa" required placeholder="Nome da empresa"></div><div class="field"><label for="email">E-mail corporativo *</label><input id="email" name="email" type="email" required placeholder="voce@empresa.com"></div><div class="field"><label for="telefone">Telefone *</label><input id="telefone" name="telefone" type="tel" required placeholder="(92) 99999-9999"></div><div class="field full"><label for="servico">Serviço de interesse</label><select id="servico" name="servico"><option value="">Selecione uma opção</option><option>Inspeção de qualidade e seleção</option><option>Diagnóstico e conserto de placas eletrônicas</option><option>Inspeção de recebimento</option><option>Suporte técnico / RMA</option><option>Submontagem e linhas de montagem</option><option>Retrabalho</option><option>Movimentação de materiais</option><option>Outro / preciso de orientação</option></select></div><div class="field full"><label for="mensagem">Como podemos ajudar?</label><textarea id="mensagem" name="mensagem" placeholder="Descreva brevemente a necessidade da sua operação"></textarea></div></div><button class="btn" type="submit">Enviar solicitação ↗</button><div class="privacy">Ao enviar, você concorda em ser contatado pela equipe da FAMA TECH.</div><p id="formMessage" role="status" style="color:#0878b9;font-weight:700;margin:12px 0 0"></p></form></div></div></section>
-</main><footer><div class="wrap footer-inner"><div><span class="footer-logo">FAMA TECH</span><br>Suporte industrial com qualidade, agilidade e foco em resultados.</div><div>© <span id="year"></span> FAMA TECH. Todos os direitos reservados.</div></div></footer>
+
+  <section class="hero" id="inicio">
+    <div class="wrap">
+      <div class="hero-content">
+        <div class="eyebrow">Suporte industrial • Manaus/AM</div>
+
+        <h1>Eficiência que move <span>a sua produção.</span></h1>
+
+        <p>
+          A FAMA TECH é especializada em suporte industrial, com soluções
+          completas para elevar a qualidade, a agilidade e a eficiência
+          da sua operação.
+        </p>
+
+        <div class="hero-actions">
+          <a class="btn" href="#servicos">Conheça nossos serviços ↗</a>
+          <a class="btn outline" href="#contato">Fale com nossa equipe</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="proof">
+    <div class="wrap proof-grid">
+      <div class="proof-item">
+        <div class="proof-icon">◷</div>
+        <div>
+          <strong>10 anos de experiência</strong>
+          <small>Conhecimento de mercado</small>
+        </div>
+      </div>
+
+      <div class="proof-item">
+        <div class="proof-icon">◇</div>
+        <div>
+          <strong>Soluções personalizadas</strong>
+          <small>Para a sua operação</small>
+        </div>
+      </div>
+
+      <div class="proof-item">
+        <div class="proof-icon">◎</div>
+        <div>
+          <strong>Equipe especializada</strong>
+          <small>Compromisso com qualidade</small>
+        </div>
+      </div>
+
+      <div class="proof-item">
+        <div class="proof-icon">↗</div>
+        <div>
+          <strong>Foco em resultados</strong>
+          <small>Mais eficiência produtiva</small>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="sobre">
+    <div class="wrap about-grid">
+      <div class="about-visual">
+        <div class="experience">
+          <strong>10 anos</strong>
+          <span>de experiência no Polo Industrial de Manaus</span>
+        </div>
+      </div>
+
+      <div class="about-copy">
+        <div class="eyebrow">Sobre a FAMA TECH</div>
+
+        <h2>Experiência e excelência para a indústria.</h2>
+
+        <p>
+          Somos referência em suporte industrial, atuando há 10 anos
+          no Polo Industrial de Manaus. Oferecemos soluções completas
+          para apoiar a qualidade e a continuidade dos processos produtivos.
+        </p>
+
+        <p>
+          Nossa atuação reúne inspeção, retrabalho, reparos, terceirização
+          de mão de obra, montagens e submontagens, sempre com atenção
+          aos padrões e às necessidades de cada cliente.
+        </p>
+
+        <ul class="checklist">
+          <li>Serviços alinhados às necessidades da sua operação</li>
+          <li>Compromisso com qualidade e agilidade</li>
+          <li>Atendimento focado em relações de confiança</li>
+        </ul>
+
+        <a class="btn" href="https://www.famagrupo.com/" target="_blank" rel="noopener">
+          Saiba mais sobre o grupo ↗
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section essence" id="essencia">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Nossa essência</div>
+
+        <h2>Princípios que orientam cada entrega.</h2>
+
+        <p>
+          Trabalhamos com responsabilidade, consistência e foco em construir
+          relações duradouras com clientes, fornecedores e colaboradores.
+        </p>
+      </div>
+
+      <div class="cards">
+        <article class="card">
+          <div class="symbol">◎</div>
+          <h3>Missão</h3>
+          <p>
+            Oferecer as melhores soluções na prestação de serviços,
+            com excelência na qualidade e no padrão de atendimento,
+            garantindo solidez nos negócios e segurança para clientes,
+            fornecedores e colaboradores.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">↗</div>
+          <h3>Visão</h3>
+          <p>
+            Ser reconhecida no mercado pela competência, integridade
+            e valor agregado na entrega dos serviços contratados,
+            além da confiabilidade das nossas ações.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="symbol">✦</div>
+          <h3>Valores</h3>
+          <p>
+            Praticamos nossos valores em cada etapa do trabalho,
+            com atenção às pessoas, aos processos e aos resultados.
+          </p>
+
+          <div class="values">
+            <span class="pill">Agilidade e velocidade</span>
+            <span class="pill">Ética e respeito</span>
+            <span class="pill">Flexibilidade</span>
+            <span class="pill">Iniciativa</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" id="servicos">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Nossos serviços</div>
+
+        <h2>Soluções completas para a sua operação.</h2>
+
+        <p>
+          Atuamos em diferentes frentes de suporte industrial, com serviços
+          especializados que contribuem para mais qualidade, agilidade
+          e eficiência no processo produtivo.
+        </p>
+      </div>
+
+      <div class="services-grid">
+
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?auto=format&fit=crop&w=700&q=80" alt="Inspeção industrial">
+          <div class="service-body">
+            <h3>Inspeção de qualidade e seleção</h3>
+            <a href="https://www.famagrupo.com/servicos/detalhes/inspecao-de-qualidade-e-selecao" target="_blank" rel="noopener">Ver serviço <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=700&q=80" alt="Placa eletrônica">
+          <div class="service-body">
+            <h3>Diagnóstico e conserto de placas eletrônicas</h3>
+            <a href="https://www.famagrupo.com/servicos/detalhes/diagnostico-e-conserto-de-placas-eletronicas" target="_blank" rel="noopener">Ver serviço <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=700&q=80" alt="Controle de qualidade">
+          <div class="service-body">
+            <h3>Inspeção de qualidade e recebimento</h3>
+            <a href="https://www.famagrupo.com/servicos/detalhes/inspecao-de-qualidade-e-selecao" target="_blank" rel="noopener">Ver serviço <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1581092580497-e0d23cbdf1dc?auto=format&fit=crop&w=700&q=80" alt="Recebimento industrial">
+          <div class="service-body">
+            <h3>Inspeção de recebimento</h3>
+            <a href="https://www.famagrupo.com/servicos/detalhes/inspecao-de-recebimento" target="_blank" rel="noopener">Ver serviço <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?auto=format&fit=crop&w=700&q=80" alt="Suporte técnico">
+          <div class="service-body">
+            <h3>Suporte técnico, análise e confirmação de RMA</h3>
+            <a href="https://www.famagrupo.com/servicos/detalhes/suporte-tecnico-analise-e-confirmacao-de-rma" target="_blank" rel="noopener">Ver serviço <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?auto=format&fit=crop&w=700&q=80" alt="Montagem industrial">
+          <div class="service-body">
+            <h3>Submontagem e suporte a linhas de montagem</h3>
+            <a href="https://www.famagrupo.com/servicos/detalhes/sub-montagem-e-suporte-a-linhas-de-montagem" target="_blank" rel="noopener">Ver serviço <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=700&q=80" alt="Retrabalho técnico">
+          <div class="service-body">
+            <h3>Retrabalho</h3>
+            <a href="https://www.famagrupo.com/servicos/detalhes/retrabalho" target="_blank" rel="noopener">Ver serviço <span>↗</span></a>
+          </div>
+        </article>
+
+        <article class="service">
+          <img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?auto=format&fit=crop&w=700&q=80" alt="Logística de materiais">
+          <div class="service-body">
+            <h3>Embarque, desembarque e transbordo de materiais</h3>
+            <a href="https://www.famagrupo.com/servicos/detalhes/embarque-desembarque-e-transbordo-de-materiais" target="_blank" rel="noopener">Ver serviço <span>↗</span></a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="section contact" id="contato">
+    <div class="wrap contact-grid">
+
+      <div>
+        <div class="eyebrow">Entre em contato</div>
+
+        <h2>Vamos encontrar a melhor solução para a sua empresa.</h2>
+
+        <p>
+          Nossa equipe está pronta para conversar com você e entender
+          as necessidades do seu negócio.
+        </p>
+
+        <div class="contact-list">
+
+          <div class="contact-line">
+            <div class="symbol">☎</div>
+            <div>
+              <strong>Telefone</strong>
+              <a href="tel:+559230265000">(92) 3026-5000</a>
+            </div>
+          </div>
+
+          <div class="contact-line">
+            <div class="symbol">◉</div>
+            <div>
+              <strong>WhatsApp</strong>
+              <a href="https://wa.me/5592985868682" target="_blank" rel="noopener">(92) 98586-8682</a>
+            </div>
+          </div>
+
+          <div class="contact-line">
+            <div class="symbol">✉</div>
+            <div>
+              <strong>E-mail</strong>
+              <a href="mailto:comercial@famagrupo.com">comercial@famagrupo.com</a>
+            </div>
+          </div>
+
+          <div class="contact-line">
+            <div class="symbol">⌖</div>
+            <div>
+              <strong>Endereço</strong>
+              <a href="https://maps.app.goo.gl/RDHtuqigLNF8JqyM9" target="_blank" rel="noopener">
+                Av. Buriti, 2691 – Distrito Industrial I<br>
+                Manaus – AM | CEP 69075-000
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="form-card">
+        <h3>Fale com um especialista</h3>
+
+        <p>Preencha seus dados e conte um pouco sobre o que sua empresa precisa.</p>
+
+        <form id="leadForm">
+          <div class="form-grid">
+
+            <div class="field">
+              <label for="nome">Nome completo *</label>
+              <input id="nome" name="nome" required placeholder="Seu nome">
+            </div>
+
+            <div class="field">
+              <label for="empresa">Empresa *</label>
+              <input id="empresa" name="empresa" required placeholder="Nome da empresa">
+            </div>
+
+            <div class="field">
+              <label for="email">E-mail corporativo *</label>
+              <input id="email" name="email" type="email" required placeholder="voce@empresa.com">
+            </div>
+
+            <div class="field">
+              <label for="telefone">Telefone *</label>
+              <input id="telefone" name="telefone" type="tel" required placeholder="(92) 99999-9999">
+            </div>
+
+            <div class="field full">
+              <label for="servico">Serviço de interesse</label>
+              <select id="servico" name="servico">
+                <option value="">Selecione uma opção</option>
+                <option>Inspeção de qualidade e seleção</option>
+                <option>Diagnóstico e conserto de placas eletrônicas</option>
+                <option>Inspeção de recebimento</option>
+                <option>Suporte técnico / RMA</option>
+                <option>Submontagem e linhas de montagem</option>
+                <option>Retrabalho</option>
+                <option>Movimentação de materiais</option>
+                <option>Outro / preciso de orientação</option>
+              </select>
+            </div>
+
+            <div class="field full">
+              <label for="mensagem">Como podemos ajudar?</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Descreva brevemente a necessidade da sua operação"></textarea>
+            </div>
+
+          </div>
+
+          <button class="btn" type="submit">Enviar solicitação ↗</button>
+
+          <div class="privacy">
+            Ao enviar, você concorda em ser contatado pela equipe da FAMA TECH.
+          </div>
+
+          <p id="formMessage" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-inner">
+    <div>
+      <span class="footer-logo">FAMA TECH</span><br>
+      Suporte industrial com qualidade, agilidade e foco em resultados.
+    </div>
+
+    <div>
+      © <span id="year"></span> FAMA TECH. Todos os direitos reservados.
+    </div>
+  </div>
+</footer>
 
 <script>
 document.getElementById('year').textContent =
@@ -55,9 +417,7 @@ document.getElementById('leadForm').addEventListener(
     mensagem.textContent = '';
 
     try {
-      const dados = new URLSearchParams(
-        new FormData(form)
-      );
+      const dados = new URLSearchParams(new FormData(form));
 
       await fetch(URL_SCRIPT, {
         method: 'POST',
@@ -67,6 +427,7 @@ document.getElementById('leadForm').addEventListener(
 
       mensagem.textContent =
         'Solicitação enviada! Nossa equipe entrará em contato.';
+
       form.reset();
 
     } catch (erro) {
@@ -80,4 +441,5 @@ document.getElementById('leadForm').addEventListener(
 );
 </script>
 
-</body></html>
+</body>
+</html>
