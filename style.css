@@ -10,6 +10,7 @@ button,input,textarea,select{font:inherit}
 .eyebrow{display:inline-block;margin-bottom:14px;color:var(--red);font-size:12px;font-weight:800;letter-spacing:2px;text-transform:uppercase}
 h2{margin-bottom:20px;color:var(--navy);font-size:clamp(28px,4vw,42px);line-height:1.2}
 p{margin-bottom:16px}
+
 header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px solid rgba(7,21,43,.08)}
 .nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:28px}
 .logo{display:inline-flex;align-items:center;flex-shrink:0;color:var(--navy);font-size:25px;font-weight:900;letter-spacing:1px}
@@ -18,6 +19,7 @@ header{position:sticky;top:0;z-index:1000;background:#fff;border-bottom:1px soli
 nav{display:flex;align-items:center;gap:26px}
 nav a{color:#354359;font-size:13px;font-weight:700;transition:color .2s ease}
 nav a:hover{color:var(--red)}
+
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:12px 21px;color:#fff;background:var(--red);border:1px solid var(--red);border-radius:4px;font-size:13px;font-weight:700;text-align:center;cursor:pointer;transition:background .2s ease,color .2s ease,border-color .2s ease,transform .2s ease}
 .btn:hover{background:#d90d35;border-color:#d90d35;transform:translateY(-2px)}
 .btn.outline{color:#fff;background:transparent;border-color:rgba(255,255,255,.6)}
@@ -44,7 +46,7 @@ nav a:hover{color:var(--red)}
 .proof-item strong{display:block;margin-bottom:5px;color:#fff;font-size:14px;line-height:1.4}
 .proof-item small{display:block;color:#aab8cb;font-size:12px;line-height:1.6}
 
-/* SOBRE */
+/* SOBRE A FAMA TECH */
 .about-grid{display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:65px}
 .about-visual{position:relative;min-height:450px;overflow:hidden;border-radius:6px;background-color:#dce5ef;background-image:linear-gradient(0deg,rgba(3,11,27,.25),rgba(3,11,27,.02)),url("./image/001.PNG");background-size:cover;background-position:center}
 .experience{position:absolute;left:22px;bottom:22px;max-width:260px;padding:20px 24px;color:#fff;background:var(--red);border-radius:4px}
@@ -177,7 +179,6 @@ nav a{flex-shrink:0;white-space:nowrap;font-size:12px}
 .proof-item{align-items:center}
 .about-visual{min-height:270px}
 .experience{left:12px;bottom:12px;max-width:calc(100% - 24px);padding:14px 16px}
-.experience strong{font-size:28px}
 .contact-line{gap:10px}
 .contact-line .symbol{width:34px;height:34px}
 .contact-line .symbol img{width:28px;height:28px}
@@ -185,18 +186,19 @@ nav a{flex-shrink:0;white-space:nowrap;font-size:12px}
 .form-card h3{font-size:21px}
 }
 
-/* MANTER MODO CLARO */
+/* AJUSTES GERAIS */
 header,body,html{color-scheme:only light}
-header,.about-visual,.service,.service-body{background-color:#fff}
-#servicos{background-color:#f4f7fb}
+header,.about-visual,.service,.service-body{background:#fff}
+#servicos{background:#f4f7fb}
 input,textarea{color-scheme:only light}
 html,body{width:100%;max-width:100%;overflow-x:clip}
+.wrap{width:min(1180px,90%);margin-left:auto;margin-right:auto}
 .about-grid,.contact-grid,.cards,.services-grid,.proof-grid,.form-grid{min-width:0}
 .about-grid>*,.contact-grid>*,.cards>*,.services-grid>*,.proof-grid>*,.form-grid>*{min-width:0}
 .hero-actions .btn.outline,.hero-actions .btn.outline:focus,.hero-actions .btn.outline:active{background:#fff;color:#07152b;border-color:#fff}
 .hero-actions .btn.outline:hover{background:#fff;color:#07152b;border-color:#fff;transform:none}
 
-/* CORREÇÃO PRINCIPAL DO BANNER NO CELULAR */
+/* BANNER NO CELULAR: FOTO SEM MARGENS E TEXTO ABAIXO */
 @media(max-width:760px){
 .hero.hero-banner{
 display:flex!important;
@@ -230,7 +232,7 @@ display:block!important;
 width:100%!important;
 min-height:auto!important;
 margin:0!important;
-padding:28px 22px 36px!important;
+padding:45px 22px 36px!important;
 background:#fff!important;
 }
 .hero-banner-text{
@@ -247,7 +249,8 @@ text-align:left;
 .hero-actions .btn{width:100%}
 .hero-actions .btn.outline{color:#07152b!important;background:#fff!important;border-color:#07152b!important}
 }
+
 @media(max-width:440px){
-.hero-banner-content{padding:26px 22px 32px!important}
+.hero-banner-content{padding:40px 22px 32px!important}
 .hero-banner-text h1{font-size:32px}
 }
