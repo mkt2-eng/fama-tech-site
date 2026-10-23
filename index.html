@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="color-scheme" content="light">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined">
   <meta name="description" content="Soluções completas em suporte industrial no Polo Industrial de Manaus.">
 
   <title>FAMA TECH | Suporte Industrial</title>
@@ -41,12 +42,12 @@
 
   <main>
 
-    <!-- BANNER PRINCIPAL COM VÍDEO -->
     <section class="hero hero-banner" id="inicio">
 
       <div class="hero-banner-content">
 
         <video
+          id="VIDEO_BANNER"
           class="hero-banner-image"
           autoplay
           muted
@@ -93,55 +94,52 @@
 
     </section>
 
-    <!-- DIFERENCIAIS -->
     <section class="proof">
       <div class="wrap proof-grid">
 
         <div class="proof-item">
-          <div class="proof-icon" aria-hidden="true">◷</div>
           <div>
-            <strong>10 anos de experiência</strong>
-            <small>Conhecimento de mercado</small>
+            <strong>+ de 10 anos de experiência</strong>
+            <p>Conhecimento de mercado</p>
           </div>
         </div>
 
         <div class="proof-item">
-          <div class="proof-icon" aria-hidden="true">◇</div>
           <div>
             <strong>Soluções personalizadas</strong>
-            <small>Para a sua operação</small>
+            <p>Para a sua operação</p>
           </div>
         </div>
 
         <div class="proof-item">
-          <div class="proof-icon" aria-hidden="true">◎</div>
           <div>
             <strong>Equipe especializada</strong>
-            <small>Compromisso com qualidade</small>
+            <p>Compromisso com qualidade</p>
           </div>
         </div>
 
         <div class="proof-item">
-          <div class="proof-icon" aria-hidden="true">↗</div>
           <div>
             <strong>Foco em resultados</strong>
-            <small>Mais eficiência produtiva</small>
+            <p>Mais eficiência produtiva</p>
           </div>
         </div>
 
       </div>
     </section>
 
-    <!-- SOBRE A FAMA TECH -->
     <section class="section" id="sobre">
       <div class="wrap about-grid">
 
-        <!-- LADO ESQUERDO: VÍDEO -->
         <div class="about-video-column">
 
           <div class="about-video-wrapper">
             <video
+              id="VIDEO_INST_FAMA"
               class="about-video"
+              autoplay
+              muted
+              loop
               controls
               playsinline
               preload="metadata"
@@ -158,7 +156,6 @@
 
         </div>
 
-        <!-- LADO DIREITO: CONTEÚDO -->
         <div class="about-copy">
 
           <div class="eyebrow">Sobre a FAMA TECH</div>
@@ -166,7 +163,7 @@
           <h2>Experiência e excelência para a indústria.</h2>
 
           <p>
-            Somos referência em suporte industrial, atuando há 10 anos
+            Somos referência em suporte industrial, atuando há mais 10 anos
             no Polo Industrial de Manaus. Oferecemos soluções completas
             para apoiar a qualidade e a continuidade dos processos produtivos.
           </p>
@@ -197,7 +194,6 @@
       </div>
     </section>
 
-    <!-- NOSSA ESSÊNCIA -->
     <section class="section essence" id="essencia">
       <div class="wrap">
 
@@ -215,7 +211,9 @@
         <div class="cards">
 
           <article class="card">
-            <div class="symbol" aria-hidden="true">◎</div>
+            <span class="material-symbols-outlined symbol">
+              target_check
+            </span>
 
             <h3>Missão</h3>
 
@@ -228,7 +226,9 @@
           </article>
 
           <article class="card">
-            <div class="symbol" aria-hidden="true">↗</div>
+            <span class="material-symbols-outlined symbol" aria-hidden="true">
+              visibility
+            </span>
 
             <h3>Visão</h3>
 
@@ -240,7 +240,9 @@
           </article>
 
           <article class="card">
-            <div class="symbol" aria-hidden="true">✦</div>
+            <span class="material-symbols-outlined symbol" aria-hidden="true">
+              balance
+            </span>
 
             <h3>Valores</h3>
 
@@ -261,7 +263,6 @@
       </div>
     </section>
 
-    <!-- SERVIÇOS -->
     <section class="section" id="servicos">
       <div class="wrap">
 
@@ -423,7 +424,6 @@
       </div>
     </section>
 
-    <!-- CONTATO -->
     <section class="section contact" id="contato">
       <div class="wrap contact-grid">
 
@@ -432,7 +432,7 @@
 
           <h2>Vamos encontrar a melhor solução para a sua empresa.</h2>
 
-          <p>
+          <p style="color: white;">
             Nossa equipe está pronta para conversar com você e entender
             as necessidades do seu negócio.
           </p>
@@ -502,7 +502,6 @@
           </div>
         </div>
 
-        <!-- FORMULÁRIO DE CONTATO -->
         <div class="form-card">
 
           <h3>Fale com um especialista</h3>
@@ -562,6 +561,8 @@
                   name="telefone"
                   type="tel"
                   autocomplete="tel"
+                  inputmode="numeric"
+                  maxlength="15"
                   required
                   placeholder="(92) 99999-9999"
                 >
@@ -614,24 +615,89 @@
 
   </main>
 
-  <!-- RODAPÉ -->
   <footer>
     <div class="wrap footer-inner">
 
-      <div>
-        <span class="footer-logo">FAMA TECH</span><br>
+      <div
+        style="
+          display: flex;
+          gap: 8px;
+          flex-direction: column;
+          align-items: flex-start;
+          max-width: 250px;
+          line-height: normal;
+          font-size: clamp(12px, 1vw, 16px);
+        "
+      >
+        <img
+          src="./image/logo_branca.png"
+          alt="FAMA TECH"
+          class="logo-image"
+        >
         Suporte industrial com qualidade, agilidade e foco em resultados.
       </div>
 
-      <div>
+      <div style="font-size: clamp(12px, 1vw, 16px);">
         © <span id="year"></span> FAMA TECH. Todos os direitos reservados.
       </div>
 
     </div>
   </footer>
 
-  <!-- JAVASCRIPT -->
   <script>
+    const VIDEO_BANNER = document.getElementById('VIDEO_BANNER');
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 761) {
+        VIDEO_BANNER.src = './image/banner_mobile.mp4';
+      }
+      else {
+        VIDEO_BANNER.src = './image/banner.mp4';
+      }
+    });
+
+    const telefone = document.getElementById('telefone');
+
+    telefone.addEventListener('input', function () {
+      let numero = this.value.replace(/\D/g, '');
+
+      // Limita a 11 dígitos: DDD + celular
+      numero = numero.substring(0, 11);
+
+      if (numero.length > 7) {
+        numero = numero.replace(
+          /^(\d{2})(\d{5})(\d{0,4}).*/,
+          '($1) $2-$3'
+        );
+      } else if (numero.length > 2) {
+        numero = numero.replace(
+          /^(\d{2})(\d{0,5})/,
+          '($1) $2'
+        );
+      } else if (numero.length > 0) {
+        numero = numero.replace(
+          /^(\d*)/,
+          '($1'
+        );
+      }
+
+      this.value = numero;
+    });
+    // Inicia vídeo assim que ele entra no campo visível do site
+    const VIDEO_INST_FAMA = document.getElementById('VIDEO_INST_FAMA');
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              VIDEO_INST_FAMA.play();
+            }
+            else {
+              VIDEO_INST_FAMA.pause();
+            }
+        });
+    },{
+      threshold: 0.5
+    });
+    observer.observe(VIDEO_INST_FAMA);
+    
     document.getElementById('year').textContent =
       new Date().getFullYear();
 

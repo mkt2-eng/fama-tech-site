@@ -114,7 +114,7 @@ header {
 
 .logo-image {
   display: block;
-  width: 170px;
+  /* width: 170px; */
   height: auto;
   max-height: 58px;
   object-fit: contain;
@@ -280,15 +280,15 @@ nav a:hover {
 /* DIFERENCIAIS */
 
 .proof {
-  padding: 32px 0;
   color: #fff;
+  padding: 40px 0;
   background: #030b1b;
 }
 
 .proof-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 28px;
+  gap: 50px;
 }
 
 .proof-item {
@@ -315,15 +315,19 @@ nav a:hover {
   display: block;
   margin-bottom: 5px;
   color: #fff;
-  font-size: 14px;
   line-height: 1.4;
+  font-size: clamp(16px, 1vw, 18px);
+}
+
+.proof-item p {
+  font-size: clamp(12px, 1vw, 14px);
 }
 
 .proof-item small {
   display: block;
-  color: #aab8cb;
-  font-size: 12px;
+  color: white;
   line-height: 1.6;
+  font-size: 12px;
 }
 
 /* SOBRE A FAMA TECH */
@@ -361,11 +365,12 @@ nav a:hover {
 .about-video-caption {
   margin: 14px 0 0;
   padding-left: 12px;
-  border-left: 3px solid #0cc0df;
+  border-left: 3px solid red;
   color: #173b53;
   font-size: 15px;
   font-weight: 700;
   line-height: 1.5;
+  max-width: 280px;
 }
 
 /* TEXTO À DIREITA */
@@ -412,7 +417,7 @@ nav a:hover {
 
 .essence {
   color: #fff;
-  background: var(--navy);
+  background: var(--navy-dark);
 }
 
 .essence .eyebrow {
@@ -435,7 +440,7 @@ nav a:hover {
 }
 
 .essence .section-head p {
-  color: #b7c4d7;
+  color: white;
 }
 
 .essence .section-head h2 {
@@ -476,9 +481,9 @@ nav a:hover {
 
 .card p {
   margin-bottom: 0;
-  color: #b7c4d7;
-  font-size: 13px;
+  color: white;
   line-height: 1.9;
+  font-size: clamp(12px, 1vw, 16px);
 }
 
 .values {
@@ -496,7 +501,7 @@ nav a:hover {
   background: rgba(255, 255, 255, 0.07);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 3px;
-  font-size: 11px;
+  font-size: clamp(12px, 0.8vw, 14px);
 }
 
 /* SERVIÇOS */
@@ -735,9 +740,8 @@ nav a:hover {
 }
 
 .privacy {
+  color: white;
   margin-top: 14px;
-  color: #91a1b8;
-  font-size: 11px;
   line-height: 1.7;
 }
 
@@ -753,7 +757,7 @@ nav a:hover {
 
 footer {
   padding: 28px 0;
-  color: #aab8cb;
+  color: white;
   background: #020714;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
 }
@@ -796,7 +800,7 @@ footer {
   }
 
   .logo-image {
-    width: 145px;
+    /* width: 145px; */
     max-height: 54px;
   }
 
@@ -899,7 +903,11 @@ footer {
   }
 
   .proof-item strong {
-    font-size: 13px;
+    font-size: clamp(14px, 1vw, 16px);
+  }
+
+  .proof-item p {
+    font-size: clamp(12px, 1vw, 14px);
   }
 
   .proof-item small {
@@ -957,6 +965,7 @@ footer {
   }
 
   .form-grid {
+    font-size: clamp(12px, 1vw, 16px);
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -1153,6 +1162,7 @@ body {
     margin: 0 !important;
     color: #263449 !important;
     text-align: left;
+    padding: 16px 0px;
   }
 
   .hero-banner-text .eyebrow {
