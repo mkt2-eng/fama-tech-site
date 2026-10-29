@@ -1,4 +1,3 @@
-
 :root {
   color-scheme: only light;
   --navy: #07152b;
@@ -80,8 +79,6 @@ p {
   margin-bottom: 16px;
 }
 
-/* CABEÇALHO */
-
 header {
   position: sticky;
   top: 0;
@@ -114,7 +111,6 @@ header {
 
 .logo-image {
   display: block;
-  /* width: 170px; */
   height: auto;
   max-height: 58px;
   object-fit: contain;
@@ -137,8 +133,6 @@ nav a:hover {
   color: var(--red);
 }
 
-/* BOTÕES */
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -154,8 +148,11 @@ nav a:hover {
   font-weight: 700;
   text-align: center;
   cursor: pointer;
-  transition: background 0.2s ease, color 0.2s ease,
-    border-color 0.2s ease, transform 0.2s ease;
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
 }
 
 .btn:hover {
@@ -175,8 +172,6 @@ nav a:hover {
   background: #fff;
   border-color: #fff;
 }
-
-/* BANNER PRINCIPAL */
 
 .hero.hero-banner {
   position: relative;
@@ -278,7 +273,6 @@ nav a:hover {
 }
 
 /* DIFERENCIAIS */
-
 .proof {
   color: #fff;
   padding: 40px 0;
@@ -331,7 +325,6 @@ nav a:hover {
 }
 
 /* SOBRE A FAMA TECH */
-
 #sobre .about-grid {
   display: grid;
   grid-template-columns: minmax(0, 0.75fr) minmax(0, 1.25fr);
@@ -339,8 +332,7 @@ nav a:hover {
   gap: 40px;
 }
 
-/* VÍDEO MENOR À ESQUERDA */
-
+/* VÍDEO */
 .about-video-column {
   width: 100%;
   max-width: 420px;
@@ -374,7 +366,6 @@ nav a:hover {
 }
 
 /* TEXTO À DIREITA */
-
 #sobre .about-copy {
   min-width: 0;
 }
@@ -414,7 +405,6 @@ nav a:hover {
 }
 
 /* ESSÊNCIA */
-
 .essence {
   color: #fff;
   background: var(--navy-dark);
@@ -504,8 +494,6 @@ nav a:hover {
   font-size: clamp(12px, 0.8vw, 14px);
 }
 
-/* SERVIÇOS */
-
 #servicos {
   background: #f4f7fb;
 }
@@ -573,8 +561,6 @@ nav a:hover {
 .service-body a span {
   font-size: 16px;
 }
-
-/* CONTATO */
 
 .contact {
   color: #fff;
@@ -647,8 +633,6 @@ nav a:hover {
 .contact-line a:hover {
   color: #fff;
 }
-
-/* FORMULÁRIO */
 
 .form-card {
   padding: 32px;
@@ -753,8 +737,6 @@ nav a:hover {
   line-height: 1.7;
 }
 
-/* RODAPÉ */
-
 footer {
   padding: 28px 0;
   color: white;
@@ -784,8 +766,6 @@ footer {
   letter-spacing: 1px;
 }
 
-/* TABLETS */
-
 @media (max-width: 1000px) {
   .nav {
     gap: 16px;
@@ -800,7 +780,6 @@ footer {
   }
 
   .logo-image {
-    /* width: 145px; */
     max-height: 54px;
   }
 
@@ -844,7 +823,6 @@ footer {
 }
 
 /* CELULARES */
-
 @media (max-width: 760px) {
   .section {
     padding: 65px 0;
@@ -914,8 +892,6 @@ footer {
     font-size: 11px;
   }
 
-  /* VÍDEO EM CIMA E TEXTO ABAIXO NO CELULAR */
-
   #sobre .about-grid,
   .contact-grid {
     grid-template-columns: minmax(0, 1fr);
@@ -980,8 +956,6 @@ footer {
   }
 }
 
-/* CELULARES PEQUENOS */
-
 @media (max-width: 440px) {
   .wrap {
     width: 92%;
@@ -1044,7 +1018,6 @@ footer {
 }
 
 /* AJUSTES GERAIS */
-
 header,
 body,
 html {
@@ -1112,8 +1085,7 @@ body {
   transform: none;
 }
 
-/* BANNER NO CELULAR: VÍDEO SEM MARGENS E TEXTO ABAIXO */
-
+/* BANNER NO CELULAR */
 @media (max-width: 760px) {
   .hero.hero-banner {
     display: flex !important;
@@ -1162,7 +1134,7 @@ body {
     margin: 0 !important;
     color: #263449 !important;
     text-align: left;
-    padding: 16px 0px;
+    padding: 16px 0;
   }
 
   .hero-banner-text .eyebrow {
@@ -1210,5 +1182,110 @@ body {
 
   .hero-banner-text h1 {
     font-size: 32px;
+  }
+}
+
+.service-media {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  overflow: hidden;
+  background: #e7edf4;
+}
+
+.service-media .service-thumbnail,
+.service-media .service-video {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border: 0;
+}
+
+.service-media .service-thumbnail {
+  cursor: pointer;
+}
+
+.service-media [hidden] {
+  display: none !important;
+}
+
+.service-media .service-thumbnail:focus-visible {
+  outline: 3px solid var(--red);
+  outline-offset: -3px;
+}
+
+@media (max-width: 760px) {
+  .service-media {
+    height: auto;
+    aspect-ratio: 16 / 9;
+  }
+}
+
+.service-media {
+  position: relative;
+  cursor: pointer;
+}
+
+.service-media::after {
+  content: "▶";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  font-size: 38px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+  transition: color 0.2s ease, transform 0.2s ease;
+}
+
+.service-media:hover::after {
+  color: #ff1744;
+  transform: translate(-50%, -50%) scale(1.12);
+}
+.service-media:has(.service-video:not([hidden]))::after {
+  display: none;
+}
+
+@media (max-width: 760px) {
+  .service-media::after {
+    font-size: 32px;
+  }
+}
+
+#sobre .about-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+}
+
+#sobre .about-video-column {
+  width: 100%;
+  max-width: none;
+}
+
+#VIDEO_INST_FAMA {
+  display: block;
+  width: 100%;
+  max-width: none;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+#sobre .about-video-wrapper {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+}
+
+@media (max-width: 760px) {
+  #sobre .about-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  #VIDEO_INST_FAMA {
+    width: 100%;
+    max-width: 100%;
   }
 }
