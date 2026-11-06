@@ -1228,19 +1228,7 @@ body {
   position: relative;
   cursor: pointer;
 }
-
-.service-media::after {
-  content: "▶";
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #fff;
-  font-size: 38px;
-  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-  pointer-events: none;
-  transition: color 0.2s ease, transform 0.2s ease;
-}
+ /*era aqui*/
 
 .service-media:hover::after {
   color: #ff1744;
